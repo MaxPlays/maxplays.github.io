@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JS Temperature Converter</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Maximilian Negedly">
+    <meta name="description" content="An easy temperature conversion utility">
+    <meta name="theme-color" content="#212121">
+
+    <link rel="icon" href="res/icon.png">
+    <link rel="stylesheet" href="css/master.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+
+</head>
+<body>
+
+    <header>
+        Temperature Converter
+        <span class="header-comment">by Maximilian Negedly</span>
+    </header>
+
+    <div class="container">
+        <div class="header">
+            Converter
+        </div>
+        <div class="content">
+
+            <label for="in" id="lable-in">Temperature: </label>
+            <input type="number" step="1" value="0" id="in" name="in">
+            <select name="unit" id="unit">
+                <option value="c">Celsius</option>
+                <option value="k">Kelvin</option>
+                <option value="f">Fahrenheit</option>
+            </select>
+
+            <p />
+
+            <table id="table">
+                <tr>
+                    <td>Celsius</td>
+                    <td>Kelvin</td>
+                    <td>Fahrenheit</td>
+                </tr>
+                <tr>
+                    <td id="out-c">.</td>
+                    <td id="out-k">.</td>
+                    <td id="out-f">.</td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+
+    <script src="js/master.js"></script>
+    <script src="js/listeners.js"></script>
+
+</body>
+</html>
