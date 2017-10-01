@@ -1,6 +1,4 @@
-# maxplays.github.io
-GitHub pages page
-
+# MaxPlays GitHub Pages site
 ## Intro ##
 This is my GitHub pages site, where I upload some of my web-based projects
 
