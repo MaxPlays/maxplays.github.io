@@ -20,6 +20,22 @@ function update() {
 
 }
 
+var a = {
+    "c/c": "c",
+    "c/k": "c + 273.15",
+    "c/f": "(c * 9/5) + 32",
+    "k/c": "k - 273.15",
+    "k/f": "(k - 273.15) * 9/5 + 32",
+    "k/k": "k",
+    "f/c": "(f - 32) * 5/9",
+    "f/k": "(f - 32) * 5/9 + 273.15",
+    "f/f": "f"
+};
+
+function formulas(){
+    $("formula").innerHTML = a[$("from").value + "/" + $("to").value];
+}
+
 function $(name) {
     return document.getElementById(name);
 }

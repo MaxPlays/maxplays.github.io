@@ -4,9 +4,10 @@
     <title>JS Temperature Converter</title>
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Maximilian Negedly">
     <meta name="description" content="An easy temperature conversion utility">
+    <meta name="date" content="01.10.2017" scheme="DD.MM.YYY">
     <meta name="theme-color" content="#212121">
 
     <link rel="icon" href="res/icon.png">
@@ -22,7 +23,7 @@
     </header>
 
     <div class="container">
-        <div class="header">
+        <div class="header blue">
             Converter
         </div>
         <div class="content">
@@ -49,6 +50,30 @@
                     <td id="out-f">.</td>
                 </tr>
             </table>
+
+        </div>
+    </div>
+
+    <div class="container top">
+        <div class="header red">Formulas</div>
+        <div class="content">
+
+            I want to convert from
+            <select id="from" name="from">
+                <option value="c">Celsius</option>
+                <option value="k">Kelvin</option>
+                <option value="f">Fahrenheit</option>
+            </select>
+            to
+            <select id="to" name="to">
+                <option value="c">Celsius</option>
+                <option value="k">Kelvin</option>
+                <option value="f">Fahrenheit</option>
+            </select>
+
+            <p />
+            Formula:
+            <pre id="formula">-</pre>
 
         </div>
     </div>
